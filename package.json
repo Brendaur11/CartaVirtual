@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://brendaur11.github.io/CartaVirtual/"
-,
+  "homepage": "https://brendaur11.github.io/CartaVirtual/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,6 +18,7 @@
     "react": "^19.1.1",
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.0",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
