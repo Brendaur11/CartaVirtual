@@ -17,7 +17,7 @@ function App() {
         <h2 className="text-2xl font-normal mb-6 text-gray-100">
           Escanea este QR para abrir la app en tu móvil
         </h2>
-        <QRCodeSVG value="https://tu-app.com" size={200} />
+        <QRCodeSVG value="https://brendaur11.github.io/CartaVirtual/" size={200} />
       </div>
     );
   }
