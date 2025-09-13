@@ -1,6 +1,6 @@
 import {QRCodeSVG} from 'qrcode.react';
 import {isMobile, isTablet} from 'react-device-detect';
-import Menu from './components/menu';
+import Menu from './components/Menu';
 
 function App() {
   if (isMobile || isTablet) {

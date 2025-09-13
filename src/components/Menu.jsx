@@ -8,10 +8,13 @@ function Menu() {
 
   return (
     <div className="flex flex-col h-screen w-screen">
+      <div className="flex justify-center items-center bg-lime-950 h-1/5" id="fondoMenu">
+      <h1 className="text-2xl text-gray-100 font-normal">Bienvenido a PESTO</h1>
+      </div>
       {/* Contenido */}
-      <div className="flex-1 overflow-auto p-4">
+      <div className="flex-1 overflow-auto rounded-t-3xl bg-gray-100 p-4">
         {currentTab.items.map((item, index) => (
-          <div key={index} className="mb-4 bg-white shadow rounded p-4">
+          <div key={index} className="mb-4 bg-white shadow rounded-2xl p-4">
             <h3 className="font-semibold text-lg">{item.name}</h3>
             {item.description && (
               <p className="text-gray-600 mt-1">{item.description}</p>
