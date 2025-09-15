@@ -23,6 +23,30 @@ export const menuItems = [
             description: "Con tomate cherry y albahaca",
             price: "$2800",
             image:  "https://cdn.pixabay.com/photo/2018/10/24/23/00/focaccia-3771454_1280.jpg"
+          },
+          {
+            name: "Focaccia con tomate",
+            description: "Con tomate cherry y albahaca",
+            price: "$2800",
+            image:  "https://cdn.pixabay.com/photo/2018/10/24/23/00/focaccia-3771454_1280.jpg"
+          },
+          {
+            name: "Focaccia con tomate",
+            description: "Con tomate cherry y albahaca",
+            price: "$2800",
+            image:  "https://cdn.pixabay.com/photo/2018/10/24/23/00/focaccia-3771454_1280.jpg"
+          },
+          {
+            name: "Focaccia con tomate",
+            description: "Con tomate cherry y albahaca",
+            price: "$2800",
+            image:  "https://cdn.pixabay.com/photo/2018/10/24/23/00/focaccia-3771454_1280.jpg"
+          },
+          {
+            name: "Focaccia con tomate",
+            description: "Con tomate cherry y albahaca",
+            price: "$2800",
+            image:  "https://cdn.pixabay.com/photo/2018/10/24/23/00/focaccia-3771454_1280.jpg"
           }
         ]
       },

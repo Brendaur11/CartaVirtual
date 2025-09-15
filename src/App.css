@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,300;1,300&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-body{
-  background-color: #3a441f;
+hmtl, body{
+  background-color: #1c200f;
+  color-scheme: only light;
 }
 
 #pantallaDesk, #fondoMenu{
-  background-color: #3a441f;
+  background-color: #1c200f;
   font-family: 'Epunda Slab';
 }
