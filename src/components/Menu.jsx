@@ -81,7 +81,7 @@ function Menu() {
       </div>
 
       {/* Bottom Tabs */}
-      <div className="flex border-t border-gray-200 bg-white">
+      <div className="fixed bottom-0 left-0 right-0 flex border-t border-gray-200 bg-white z-50">
         {menuItems.map((tab) => (
           <button
             key={tab.category}
