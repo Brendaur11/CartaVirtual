@@ -18,18 +18,18 @@ function App() {
         className="relative flex flex-col items-center justify-center text-center text-gray-100 h-screen w-screen bg-green-800"
       >
         <div className="absolute text-[25rem]">
-          <i className="bx bx-chef-hat" style={{ color: "#3a441f" }}></i>
+          <i className="bx bx-chef-hat" style={{ color: "#65724144" }}></i>
         </div>
         
         <div className='absolute'>
-          <h1 className="text-4xl font-semibold" style={{fontFamily:'Epunda Slab'}}>PESTO SALUMERIA</h1>
+          <h1 className="text-4xl font-semibold">PESTO SALUMERIA</h1>
 
-          <div className="mt-6 p-2 backdrop-blur-sm bg-gray-100/10 rounded-md border border-lime-950">
+          <div className="mt-6 p-2 backdrop-blur-sm bg-lime-950/40 rounded-md">
             <h2 className="text-xl">Ubicación</h2>
             <p>Santa Fé</p>
           </div>
 
-          <div className="mt-6 p-2 backdrop-blur-sm bg-gray-100/10 rounded-md border border-lime-950">
+          <div className="mt-6 p-2 backdrop-blur-sm bg-lime-950/40 rounded-md">
             <h2 className="text-xl">Horario</h2>
             <p>Martes a Domingo</p>
             <p>Mañana 8.30Hs - Tarde 16.30Hs</p>
@@ -46,7 +46,7 @@ function App() {
             </a>
 
             <button
-              className="flex justify-center items-center bg-gray-200 font-normal text-lime-950 px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition"
+              className="flex justify-center items-center bg-gray-300 font-normal text-lime-950 px-4 py-2 rounded-lg shadow hover:bg-gray-100 transition"
               onClick={() => setShowMenu(true)}
             >
               Carta Salón 

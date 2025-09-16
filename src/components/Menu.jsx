@@ -36,7 +36,7 @@ function Menu(onClick) {
   const currentTab = menuItems.find((tab) => tab.category === activeTab);
 
   return (
-    <div className="flex flex-col w-screen">
+    <div className="flex flex-col w-screen z-10">
       {/* Header */}
       <div className="flex relative justify-center items-center h-40 bg-lime-950" id="fondoMenu">
         <div className="absolute text-9xl">
@@ -52,7 +52,7 @@ function Menu(onClick) {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.4 }}
           ref={scrollRef}
           className="flex-1 overflow-auto min-h-screen rounded-t-3xl bg-gray-100 p-4 pb-20"
         >
