@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import { menuItems } from "../data/menu";
 
-function Menu() {
+function Menu(onClick) {
   const [activeTab, setActiveTab] = useState(menuItems[0].category);
   const [activeItem, setActiveItem] = useState(null);
   const [showTabs, setShowTabs] = useState(true); // 👈 controla visibilidad de tabs
@@ -42,7 +42,7 @@ function Menu() {
         <div className="absolute text-9xl">
           <i className="bx bx-chef-hat" style={{ color: "#3a441f" }}></i>
         </div>
-        <h1 className="absolute text-3xl text-gray-100 font-semibold">[Nombre]</h1>
+        <h1 className="absolute text-3xl text-gray-100 font-semibold">PESTO</h1>
       </div>
 
       {/* Contenido con scroll */}
@@ -52,7 +52,7 @@ function Menu() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.1 }}
+          transition={{ duration: 0.2 }}
           ref={scrollRef}
           className="flex-1 overflow-auto min-h-screen rounded-t-3xl bg-gray-100 p-4 pb-20"
         >
@@ -61,7 +61,7 @@ function Menu() {
               <div
                 // i
                 key={index}
-                className="bg-white shadow rounded-2xl p-4 mb-3 cursor-pointer hover:border hover:border-lime-700 transition"
+                className="bg-white shadow rounded-2xl p-4 mb-3 cursor-pointer hover:border hover:border-lime-700 transition lg:w-1/2 lg:mx-auto"
                 onClick={() => item.subItems ? setActiveItem(item) : null}
               >
                 <h3 className="font-semibold text-lg">{item.name}</h3>
@@ -72,7 +72,7 @@ function Menu() {
             ))}
 
           {activeItem && (
-            <div>
+            <div className="2xl:w-1/2 2xl:mx-auto">
               <div 
                 className="flex ml-4">
                 <button                  
@@ -86,8 +86,8 @@ function Menu() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.2 }}
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-18"
+                transition={{ duration: 0.4 }}
+                className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-18"
               >
                 {activeItem.subItems.map((sub, index) => (
                   <div
@@ -126,22 +126,24 @@ function Menu() {
           showTabs ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        {menuItems.map((tab) => (
-          <button
-            key={tab.category}
-            className={`flex-1 py-3 text-center font-medium transition duration-700 ${
-              activeTab === tab.category
-                ? "text-lime-700 border-t-2 border-lime-700"
-                : "text-gray-500 hover:text-lime-700"
-            }`}
-            onClick={() => {
-              setActiveTab(tab.category);
-              setActiveItem(null);
-            }}
-          >
-            {tab.category}
-          </button>
-        ))}
+        <div className="flex w-screen 2xl:w-1/2 lg:mx-auto">
+          {menuItems.map((tab) => (
+            <button
+              key={tab.category}
+              className={`flex-1 py-3 text-center font-medium transition duration-700 ${
+                activeTab === tab.category
+                  ? "text-lime-700 border-t-2 border-lime-700"
+                  : "text-gray-500 hover:text-lime-700"
+              }`}
+              onClick={() => {
+                setActiveTab(tab.category);
+                setActiveItem(null);
+              }}
+            >
+              {tab.category}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
