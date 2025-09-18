@@ -126,23 +126,25 @@ function Menu(onClick) {
           showTabs ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="flex w-screen 2xl:w-1/2 lg:mx-auto">
-          {menuItems.map((tab) => (
-            <button
-              key={tab.category}
-              className={`flex-1 py-3 text-center font-medium transition duration-700 ${
-                activeTab === tab.category
-                  ? "text-lime-700 border-t-2 border-lime-700"
-                  : "text-gray-500 hover:text-lime-700"
-              }`}
-              onClick={() => {
-                setActiveTab(tab.category);
-                setActiveItem(null);
-              }}
-            >
-              {tab.category}
-            </button>
-          ))}
+        <div className="flex w-screen 2xl:w-1/2 lg:mx-auto overflow-x-auto scrollbar-hide">
+          <div className="flex">
+            {menuItems.map((tab) => (
+              <button
+                key={tab.category}
+                className={`flex-shrink-0 px-4 py-3 text-center font-medium transition duration-700 ${
+                  activeTab === tab.category
+                    ? "text-lime-700 border-t-2 border-lime-700"
+                    : "text-gray-500 hover:text-lime-700"
+                }`}
+                onClick={() => {
+                  setActiveTab(tab.category);
+                  setActiveItem(null);
+                }}
+              >
+                {tab.category}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>

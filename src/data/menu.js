@@ -116,5 +116,16 @@ export const menuItems = [
         img: ""
       }
     ]
+  },
+  {
+    category: "Conservas",
+    items:[
+      { name: "Frappe de Café",
+        img: ""
+      },
+      { name: "Smoothie",
+        img: ""
+      }
+    ]
   }
 ];
